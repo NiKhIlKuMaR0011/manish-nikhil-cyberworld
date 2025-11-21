@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CyberWorld Website Builder</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%);
+            min-height: 100vh;
+        }
+        header {
+            background: linear-gradient(90deg, #ff6a00, #ee0979);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            background: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        nav a {
+            color: #ee0979;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ff6a00;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: rgba(255,255,255,0.85);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 2rem;
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .feature {
+            flex: 1 1 250px;
+            background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+        .feature:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #ff512f 0%, #dd2476 100%);
+        }
+        .cta {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .cta button {
+            background: linear-gradient(90deg, #ee0979, #ff6a00);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .cta button:hover {
+            background: linear-gradient(90deg, #43cea2, #185a9d);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: linear-gradient(90deg, #43cea2, #185a9d);
+            color: white;
+            margin-top: 2rem;
+            border-radius: 0 0 16px 16px;
+        }
+    </style>
+    <script>
+        function showContactForm() {
+            alert('Contact us at: info@cyberworld.com\nOr call: +1-234-567-890');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>CyberWorld Website Builder</h1>
+        <p>Build stunning, multi-color interactive websites with ease!</p>
+    </header>
+    <nav>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact" onclick="showContactForm(); return false;">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="features">
+            <h2>Our Features</h2>
+            <div class="features">
+                <div class="feature" onclick="alert('Drag & Drop Builder: Create layouts visually!')">
+                    <h3>Drag & Drop Builder</h3>
+                    <p>Design your website with an intuitive drag & drop interface.</p>
+                </div>
+                <div class="feature" onclick="alert('Responsive Design: Looks great on all devices!')">
+                    <h3>Responsive Design</h3>
+                    <p>Your site will look perfect on desktops, tablets, and mobiles.</p>
+                </div>
+                <div class="feature" onclick="alert('Multi-Color Themes: Choose your style!')">
+                    <h3>Multi-Color Themes</h3>
+                    <p>Pick from vibrant color palettes to match your brand.</p>
+                </div>
+                <div class="feature" onclick="alert('SEO Optimized: Get found online!')">
+                    <h3>SEO Optimized</h3>
+                    <p>Boost your visibility with built-in SEO tools.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About CyberWorld</h2>
+            <p>
+                CyberWorld is a leading website builder company, helping businesses and individuals create beautiful, interactive, and colorful websites. Our platform is easy to use, packed with features, and designed to help you succeed online.
+            </p>
+        </section>
+        <div class="cta">
+            <button onclick="showContactForm()">Get Started</button>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 CyberWorld Website Builder. All rights reserved.
+    </footer>
+</body>
+</html>
